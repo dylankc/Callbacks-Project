@@ -21,9 +21,12 @@ myForEach(['laika', 'belka'], function (el) {
 console.log(test); // ['LAIKA', 'BELKA']
 *******************************************************************************/
 
-function myForEach(array, cb) {
-    // Your code here 
+function myForEach(array, callback) {
+    for (let i = 0; i < array.length; i++) {
+      callback(array[i], i, array);
+    }
 }
+//console.log(test); // ['LAIKA', 'BELKA']
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
