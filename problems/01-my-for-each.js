@@ -26,7 +26,11 @@ function myForEach(array, callback) {
       callback(array[i], i, array);
     }
 }
-//console.log(test); // ['LAIKA', 'BELKA']
+let test = [];
+myForEach(['laika', 'belka'], function (el) {
+    test.push(el.toUpperCase());
+});
+console.log(test); // ['LAIKA', 'BELKA']
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
